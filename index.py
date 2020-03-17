@@ -55,5 +55,6 @@ def logout():
 @fl.errorhandler(404)
 def not_found(error):
 	return '<h1> Oops! laman tidak tersedia</h1>'
+
 if __name__ == '__main__':
-	fl.run(host='127.0.0.1',port=int(os.environ.get('PORT',5000)),debug=True)
+	fl.run(host='0.0.0.0',port=int(os.environ.get('PORT',5000)),debug=True)
