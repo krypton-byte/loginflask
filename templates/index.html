@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title> Daftar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static',filename='framework/css/bootstrap.min.css') }}"}>
+<script src="{{ url_for('static',filename='framework/js/bootstrap.min.js') }}">
+</script>
+</head>
+<body>
+<form action="/register" method="POST">
+  <div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Alamat</label>
+    <div class="col-sm-10">
+      <input type="text" name="nama" class="form-control form-control-sm" id="colFormLabelSm" placeholder="nama lengkap">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+    <div class="col-sm-10">
+      <input type="email" name="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="alamat email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Password</label>
+    <div class="col-sm-10">
+      <input type="password" name="password" class="form-control form-control-sm" id="colFormLabelSm" placeholder="kata sandi">
+    </div>
+  </div>
+ <div class="form-group col-md-4">
+      <label for="inputState">Gender</label>
+      <select id="inputState" class="form-control" name="gender">
+        <option value="laki-laki" selected>Laki-Laki</option>
+        <option value="perempuan">Perempuan</option></div>
+<div class="form-group row">
+    <label fot="inputState">Alamat</label>
+    <div class="col-sm-10">
+      <input type="text" name="alamat" class="form-control form-control-sm" id="colFormLabelSm" placeholder="alamat">
+    </div>
+  </div>
+<div class="form-group col-md-4">
+      <label for="inputState">Status</label>
+      <select id="inputState" class="form-control" name="status">
+        <option value="jomblo" selected>JOMBLO</option>
+	<option value="pdkt" >PDKT</option>
+        <option value="pacaran">PACARAN</option>
+        <option value="nikah">NIKAH</option></div>
+<div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">asal sekolah</label>
+    <div class="col-sm-10">
+      <input type="text" name="sekolah" class="form-control form-control-sm" id="colFormLabelSm" placeholder="asal sekolah">
+    </div>
+  </div>
+<div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">nomer whatsapp</label>
+    <div class="col-sm-10">
+      <input type="number" name="nowa" class="form-control form-control-sm" id="colFormLabelSm" placeholder="nomer whatspps">
+    </div>
+  </div>
+<div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">usia</label>
+    <div class="col-sm-10">
+      <input type="number" name="umur" class="form-control form-control-sm" id="colFormLabelSm" placeholder="usia" min=13 max=70 value=14>
+    </div>
+  </div>
+  <p align="right"><button type="submit" class="btn btn-primary">daftar</button></p>
+</form>
+<style>
+</style>
+</body>
+</html>
