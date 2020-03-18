@@ -1,6 +1,6 @@
 from markupsafe import escape
 from flask import *
-import sqlite3
+import sqlite3,os
 fl=Flask(__name__)
 fl.secret_key=b'_5#y2L"F4Q8z\n\xec]/'
 @fl.route('/login', methods=['GET','POST'])
@@ -58,4 +58,4 @@ def not_found(error):
 	return '<h1> Oops! laman tidak tersedia</h1>'
 
 if __name__ == '__main__':
-	fl.run(host='0.0.0.0',port=5000,debug=True)
+	fl.run(host='0.0.0.0',port=int(os.environ.get('PORT',5000)),debug=True)
